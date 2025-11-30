@@ -33,7 +33,6 @@ Project ini dibuat menggunakan:
 ### 1. Clone atau download project
 
 ### 2. Install semua dependency
-
 Jalankan perintah di terminal:
 
 `npm install`
@@ -50,6 +49,35 @@ Gunakan:
 `node app.js`
 
 Jika server berhasil berjalan, akan muncul pesan:
+
 `Server running on http://localhost:3000`
 
+### 4. Buka website di browser
+Akses dengan:
 
+`http://localhost:3000`
+
+### 5. Login ke halaman admin (opsional)
+
+Masuk ke halaman login admin:
+
+`http://localhost:3000/login`
+
+Gunakan akun:
+
+`username: admin
+password: 12345`
+
+Dengan login, admin bisa:
+- Membuat event
+- Mengedit event
+- Menghapus event
+- Melihat data event
+
+### 6. Mengubah username/password admin (opsional)
+Edit code ini di app.js:
+
+`const ADMIN_USER = "admin";
+const ADMIN_PASS = "12345";`
+
+### 7. Gunakan website
