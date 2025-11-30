@@ -77,7 +77,8 @@ Dengan login, admin bisa:
 ### 6. Mengubah username/password admin (opsional)
 Edit code ini di app.js:
 
-`const ADMIN_USER = "admin";
-const ADMIN_PASS = "12345";`
+`const ADMIN_USER = "admin";`
+
+`const ADMIN_PASS = "12345";`
 
 ### 7. Gunakan website
