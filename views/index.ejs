@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Daftar Event</title>
+  <style>
+    .card {
+      border: 1px solid #ccc;
+      padding: 15px;
+      margin: 10px;
+      border-radius: 8px;
+      width: 250px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <h1 style="text-align: center;">Daftar Event HMIF</h1>
+
+  <% if (events.length === 0) { %>
+    <p style="text-align: center;">Belum ada event.</p>
+  <% } %>
+
+  <div style="display:flex; flex-wrap:wrap; justify-content:center;">
+    <% events.forEach(event => { %>
+      <div class="card" style="margin: 10px;">
+        <h3><%= event.name %></h3>
+        <p><b>Tanggal:</b> <%= event.date %></p>
+        <p><b>Lokasi:</b> <%= event.location %></p>
+        <p><b>Sisa Kuota:</b> <%= event.quota %></p>
+
+        <% if (event.quota > 0) { %>
+          <form action="/register/<%= event.id %>" method="POST">
+            <button type="submit">Daftar</button>
+          </form>
+        <% } else { %>
+          <button disabled>Kuota Habis</button>
+        <% } %>
+      </div>
+    <% }) %>
+  </div>
+
+</body>
+</html>

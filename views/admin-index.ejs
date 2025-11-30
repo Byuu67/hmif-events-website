@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Admin Dashboard</title>
+  <style>
+    body {
+      text-align: center;
+    }
+    table {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  </style>
+</head>
+<body>
+  <h1>Dashboard Admin</h1>
+
+  <a href="/admin/create">Tambah Event Baru</a>
+  <br><br>
+
+  <table border="1" cellpadding="8">
+    <tr>
+      <th>ID</th>
+      <th>Nama</th>
+      <th>Tanggal</th>
+      <th>Lokasi</th>
+      <th>Kuota</th>
+      <th>Aksi</th>
+    </tr>
+
+    <% events.forEach(e => { %>
+      <tr>
+        <td><%= e.id %></td>
+        <td><%= e.name %></td>
+        <td><%= e.date %></td>
+        <td><%= e.location %></td>
+        <td><%= e.quota %></td>
+        <td>
+          <a href="/admin/edit/<%= e.id %>">Edit</a>
+
+          <form action="/admin/delete/<%= e.id %>" method="POST" style="display:inline;">
+            <button type="submit">Delete</button>
+          </form>
+        </td>
+      </tr>
+    <% }) %>
+
+  </table>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Tambah Event</title>
+  <style>
+    body {
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <h1>Tambah Event Baru</h1>
+
+  <form action="/admin/create" method="POST">
+    <label>Nama Event</label><br>
+    <input name="name" required><br><br>
+
+    <label>Deskripsi</label><br>
+    <textarea name="description" required></textarea><br><br>
+
+    <label>Tanggal</label><br>
+    <input name="date" required><br><br>
+
+    <label>Lokasi</label><br>
+    <input name="location" required><br><br>
+
+    <label>Kuota</label><br>
+    <input type="number" name="quota" required><br><br>
+
+    <button type="submit">Simpan</button>
+  </form>
+
+  <br>
+  <a href="/admin">Kembali</a>
+</body>
+</html>
