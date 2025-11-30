@@ -28,6 +28,20 @@ Project ini dibuat menggunakan:
 
 ---
 
+## Struktur File
+hmif-events-website/
+│ app.js
+│ database.js
+├── views/
+│   ├── index.ejs
+│   ├── login.ejs
+│   ├── admin-index.ejs
+│   ├── admin-create.ejs
+│   └── admin-edit.ejs
+└── public/
+
+---
+
 ## Cara Instalasi
 
 ### 1. Clone atau download project
