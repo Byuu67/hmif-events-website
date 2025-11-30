@@ -29,16 +29,17 @@ Project ini dibuat menggunakan:
 ---
 
 ## Struktur File
-hmif-events-website/
-│ app.js
-│ database.js
-├── views/
-│   ├── index.ejs
-│   ├── login.ejs
-│   ├── admin-index.ejs
-│   ├── admin-create.ejs
-│   └── admin-edit.ejs
-└── public/
+
+* hmif-events-website/
+  * app.js
+  * database.js
+  * views/
+    1. index.ejs
+    2. login.ejs
+    3. admin-index.ejs
+    4. admin-create.ejs
+    5. admin-edit.ejs
+  * public/
 
 ---
 
