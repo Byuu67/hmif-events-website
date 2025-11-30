@@ -36,7 +36,7 @@ Project ini dibuat menggunakan:
 
 Jalankan perintah di terminal:
 
-npm install
+`npm install`
 
 Perintah ini akan meng-install:
 - express
@@ -46,6 +46,7 @@ Perintah ini akan meng-install:
 
 ### 3. Jalankan server
 Gunakan:
+
 `node app.js`
 
 Jika server berhasil berjalan, akan muncul pesan:
