@@ -65,8 +65,9 @@ Masuk ke halaman login admin:
 
 Gunakan akun:
 
-`username: admin
-password: 12345`
+`username: admin`
+
+`password: 12345`
 
 Dengan login, admin bisa:
 - Membuat event
